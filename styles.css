@@ -1,0 +1,89 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+/* Header Design */
+.header {
+    display: flex;
+    justify-content: center;
+    background-color:green;
+    border: 1px solid white;
+    padding: 1px;
+    color:white;
+}
+
+/* Setting Border */
+table,tr,th,td {
+    border:1px solid black;
+    border-collapse: collapse;
+}
+
+/* Input field and +add button layout */
+.inputTaker {
+    display: flex;
+    justify-content: center;
+}
+
+/* Input field size */
+#inputField {
+    width: 85vw;
+    height: 5vh;
+}
+
+/* +add button size */
+#btn {
+    width: 15vw;
+    height: 5vh;
+}
+
+/* Serial number and description heading design */
+.snh,.taskh  {
+    background-color:greenyellow;
+    color: black;
+    height: 5vh;
+    font-size: 1.3rem;
+}
+
+/* Serial number heading cell size  */
+.snh {
+    width: 10vw;
+}
+
+/* Description heading cell size */
+.taskh {
+    width: 90vw;
+}
+
+/* Serial number cell alignment */
+.sn {
+    text-align:center;
+}
+
+/* description width */
+.task {
+    width: 80vw;
+}
+
+/* Delete button styles */
+.dlt-btn {
+    background-color: red;
+    border-style: none;
+    width: 10vw;
+    height: 3.1vh;
+    color:white;
+    font-weight: bolder;    
+}
+
+
+/* Showing cursor/Hand on hover on both btns */
+.dlt-btn:hover, .add:hover {
+    cursor: pointer;
+}
+
+/* Zebra strips desgin on table */
+#task_container tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+/* ***************Work by Mohsin Hussain*************** */
