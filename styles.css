@@ -4,6 +4,10 @@
     box-sizing:border-box;
 }
 
+/* Setting border on main container */
+.container {
+    border: 1px solid black;
+}
 /* Header Design */
 .header {
     display: flex;
@@ -28,7 +32,7 @@ table,tr,th,td {
 
 /* Input field size */
 #inputField {
-    width: 85vw;
+    width: 84vw;
     height: 5vh;
 }
 
@@ -36,6 +40,7 @@ table,tr,th,td {
 #btn {
     width: 15vw;
     height: 5vh;
+    border-style: none;
 }
 
 /* Serial number and description heading design */
@@ -73,7 +78,8 @@ table,tr,th,td {
     width: 10vw;
     height: 3.1vh;
     color:white;
-    font-weight: bolder;    
+    font-weight: bold;
+    font-size: 2vw;    
 }
 
 

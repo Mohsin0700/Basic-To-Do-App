@@ -31,6 +31,7 @@ const mainFunc = () => {
     // Setting classes for displaying data.
     td1.className = "sn";
     td2.className = "task";
+    td3.className = "dlt-btn";
     del_btn.className = "dlt-btn";
 
 
@@ -53,6 +54,7 @@ const mainFunc = () => {
 
     // ***** Inserting onclick event and calling delete row f unction for each row*****
     del_btn.setAttribute("onclick", "deleteRow(this)");
+    
 }
 
 
@@ -63,5 +65,12 @@ function deleteRow(r) {
 }
 
 
-
 // *************** Work by Mohsin Hussain***************
+
+let input = document.getElementById("inputField");
+input.addEventListener("keyup", function(event) {
+    if (event.keyCode === 13) {
+        event.preventDefault();
+        mainFunc();
+    }
+});
